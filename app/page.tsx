@@ -9,8 +9,8 @@ export default function Home() {
     <div className="flex flex-col gap-5 pt-3 text-2xl font-bold">
       {terminalMode ? null : <div className="flex items-center burbanfont justify-center gap-4 md:gap-14">
         
-        <button onClick={() => setTerminalMode("terminal")} className="bg-slate-800/95 px-5 py-3 rounded-xl text-purple-500">About</button>
-        <button onClick={() => setTerminalMode("stream")} className="bg-slate-800/95 px-5 py-3 rounded-xl text-pink-700">Live Stream</button>
+        <button onClick={() => setTerminalMode("terminal")} className="bg-slate-800/95 px-5 py-3 rounded-xl text-fuchsia-300">About</button>
+        <button onClick={() => setTerminalMode("stream")} className="bg-slate-800/95 px-5 py-3 rounded-xl text-fuchsia-300">Live Stream</button>
         
 
     </div>}
