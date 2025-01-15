@@ -2,27 +2,36 @@
 @tailwind components;
 @tailwind utilities;
 
-/* @font-face {
+@font-face {
   font-family: 'Consolas';
   src: url('/fonts/CONSOLA.ttf') format('truetype');
   font-style: normal;
-} */
-
+}
 @font-face {
+  font-family: 'fortnite';
+  src: url('/fonts/fortnite.otf') format('truetype');
+  font-style: normal;
+}
+
+/* @font-face {
   font-family: "BurbankBigCondensed";
-  src: url("/BurbankBigCondensed-Black.otf") format("opentype");
+  src: url("/fonts/BurbankBigCondensed-Black.otf") format("opentype");
   font-weight: 300;
   font-style: normal;
 }
 
-
-/* body {
-  font-family: 'Consolas', sans-serif;
+.burbanfont{
+  font-family: 'BurbankBigCondensed', sans-serif;
 } */
 
+
 body {
-  font-family: 'BurbankBigCondensed', sans-serif;
+  font-family: 'fortnite', sans-serif;
 }
+
+/* body {
+  font-family: 'BurbankBigCondensed', sans-serif;
+} */
 
 html, body {
   height: 100%;
