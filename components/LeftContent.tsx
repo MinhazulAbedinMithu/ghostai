@@ -30,7 +30,7 @@ const LeftContent: React.FC = () => {
   };
 
   return (
-    <div className="text-fuchsia-400">
+    <div className="text-fuchsia-400 h-full">
       <LeftTabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
 
       <div>{renderTabContent()}</div>
