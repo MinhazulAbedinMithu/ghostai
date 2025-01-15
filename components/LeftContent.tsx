@@ -4,7 +4,6 @@ import LeftTabs from "./LeftTabs";
 import Home from "./Home";
 import Docs from "./Docs";
 import Roadmap from "./Roadmap";
-import Whitepaper from "./Whitepaper";
 import About from "./About";
 import Footer from "./Footer";
 
