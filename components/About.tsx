@@ -61,7 +61,7 @@ const About = () => {
 
   return (
     <div className="flex flex-col bg-black/80 backdrop-blur-md rounded-lg border border-fuchsia-500/30 shadow-lg shadow-fuchsia-500/20 h-[500px] max-h-[500px] overflow-y-auto text-center">
-      <LeftTitle title="About" />
+      {/* <LeftTitle title="About" /> */}
       <div className="p-4 overflow-y-auto text-sm md:text-base">
         {paragraphs.map((paragraph, index) => (
           <p key={index} className="mb-4">

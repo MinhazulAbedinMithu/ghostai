@@ -1,7 +1,6 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import { useEffect, useState } from "react";
 import { FiTerminal } from "react-icons/fi";
-import LeftTitle from "./LeftTitle";
 import { supabase } from "@/lib/supabaseClient";
 import Link from "next/link";
 import { FaCheck } from "react-icons/fa";
@@ -85,7 +84,7 @@ const Home = () => {
 
   return (
     <div className="flex flex-col bg-black/80 backdrop-blur-md rounded-lg border border-fuchsia-500/30 shadow-lg shadow-fuchsia-500/20 min-h-[500px] overflow-y-auto text-center">
-      <LeftTitle title="Home" />
+      {/* <LeftTitle title="Home" /> */}
 
       <div className="flex-1 flex flex-col items-center justify-center p-4 sm:p-8 overflow-y-auto">
         <div className="w-full max-w-lg flex flex-col items-center space-y-6">
