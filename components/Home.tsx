@@ -92,10 +92,10 @@ const Home = () => {
           <h1 className="text-xl xs:text-2xl sm:text-4xl font-bold text-cyan-400 mb-4 xs:mb-5 sm:mb-6">
             GhostAI
           </h1>
-          <p className="text-base max-w-2xl leading-relaxed text-fuchsia-400/90">
+          <p className="text-base max-w-2xl leading-relaxed text-fuchsia-300/90">
             {description}
           </p>
-          <p className="font-bold text-base leading-relaxed text-fuchsia-400/90">
+          <p className="font-bold text-base leading-relaxed text-fuchsia-300/90">
             {tagline}
           </p>
 
@@ -103,7 +103,7 @@ const Home = () => {
             className="w-full flex items-center justify-center gap-1.5 xs:gap-2 px-2 xs:px-3 py-1 xs:py-1.5 bg-black/40 rounded border border-fuchsia-500/30 
                        hover:border-cyan-400/50 transition-colors group break-all"
           >
-            <span className="text-fuchsia-400 font-mono text-xs xs:text-sm">
+            <span className="text-fuchsia-300 font-mono text-xs xs:text-sm">
               {token}
             </span>
             <button
@@ -132,7 +132,7 @@ const Home = () => {
                 className="text-cyan-400 group-hover:text-cyan-300"
                 size={18}
               />
-              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-400">
+              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-300">
                 Pump.Fun
               </span>
             </Link>
@@ -146,7 +146,7 @@ const Home = () => {
                 className="text-cyan-400 group-hover:text-cyan-300"
                 size={18}
               />
-              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-400">
+              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-300">
                 Raydium
               </span>
             </Link>
@@ -160,7 +160,7 @@ const Home = () => {
                 className="text-cyan-400 group-hover:text-cyan-300"
                 size={18}
               />
-              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-400">
+              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-300">
                 Jupiter
               </span>
             </Link>
@@ -176,7 +176,7 @@ const Home = () => {
                 className="text-cyan-400 group-hover:text-cyan-300"
                 size={18}
               />
-              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-400">
+              <span className="font-mono text-xs xs:text-sm group-hover:text-fuchsia-300">
                 DexScreener
               </span>
             </Link>

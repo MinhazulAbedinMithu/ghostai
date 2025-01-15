@@ -25,7 +25,7 @@ const LeftTabs: React.FC<Props> = ({ activeTab, setActiveTab, tabs }) => {
                      ${
                        activeTab === tab
                          ? "text-cyan-400 bg-cyan-950/30 shadow-lg shadow-cyan-500/20"
-                         : "bg-transparent hover:text-fuchsia-400"
+                         : "bg-transparent hover:text-fuchsia-300"
                      }`}
         >
           <span>{tab}</span>

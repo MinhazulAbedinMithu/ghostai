@@ -21,12 +21,12 @@ const DashTabs: React.FC = () => {
       case "ROADMAP":
         return <DashRoadmap />;
       default:
-        return <div className="text-fuchsia-400">No Content</div>;
+        return <div className="text-fuchsia-300">No Content</div>;
     }
   };
 
   return (
-    <div className="min-h-screen text-fuchsia-400 py-6">
+    <div className="min-h-screen text-fuchsia-300 py-6">
       <LeftTabs tabs={tabs} activeTab={activeTab} setActiveTab={setActiveTab} />
 
       <div>{renderTabContent()}</div>

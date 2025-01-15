@@ -10,7 +10,7 @@ import Footer from "./Footer";
 
 const LeftContent: React.FC = () => {
   const [activeTab, setActiveTab] = useState<string>("HOME");
-  const tabs = ["HOME", "ABOUT", "DOCS", "WHITEPAPER", "ROADMAP"];
+  const tabs = ["HOME", "ABOUT", "DOCS", "ROADMAP"];
 
   const renderTabContent = () => {
     switch (activeTab) {
@@ -20,8 +20,8 @@ const LeftContent: React.FC = () => {
         return <About />;
       case "DOCS":
         return <Docs />;
-      case "WHITEPAPER":
-        return <Whitepaper />;
+      // case "WHITEPAPER":
+      //   return <Whitepaper />;
       case "ROADMAP":
         return <Roadmap />;
       default:
@@ -30,7 +30,7 @@ const LeftContent: React.FC = () => {
   };
 
   return (
-    <div className="text-fuchsia-400 h-full">
+    <div className="text-fuchsia-300 h-full">
       <LeftTabs activeTab={activeTab} setActiveTab={setActiveTab} tabs={tabs} />
 
       <div>{renderTabContent()}</div>
