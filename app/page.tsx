@@ -6,7 +6,7 @@ import { useState } from "react";
 export default function Home() {
   const [terminalMode, setTerminalMode] =  useState<null | "terminal" |"stream">(null);
   return (
-    <div className="flex flex-col gap-5 pt-3 text-2xl font-bold">
+    <div className="flex flex-col gap-5 pt-3 text-3xl font-bold">
       {terminalMode ? null : <div className="flex items-center burbanfont justify-center gap-4 md:gap-14">
         
         <button onClick={() => setTerminalMode("terminal")} className="bg-slate-800/95 px-5 py-3 rounded-xl text-fuchsia-300">About</button>
