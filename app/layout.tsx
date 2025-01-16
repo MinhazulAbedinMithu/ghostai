@@ -29,7 +29,7 @@ export default function RootLayout({
       >
         <div className="fixed top-0 left-0 w-full h-full z-[-1]">
           <video
-            className="h-full w-full object-cover"
+            className="h-full w-full object-fill"
             autoPlay
             loop
             muted
