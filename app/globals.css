@@ -50,7 +50,7 @@ html, body {
   justify-content: center;
   align-items: center;
   width: 100%;
-  min-height: 400px;
+  /* min-height: 400px; */
   border-radius: 16px;
   background: linear-gradient(135deg, #22d3ee, #a855f7, #f43f5e, #22d3ee);
   background-size: 300% 300%;

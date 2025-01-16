@@ -37,10 +37,10 @@ const RightContent = () => {
   }, []);
 
   return (
-    <div className="outer-container h-full">
+    <div className="outer-container h-full  w-full">
     <div
       id="twitch-embed"
-      className="mb-5 md:mb-0 w-full min-h-[400px] rounded-lg overflow-hidden inner-container"
+      className="mb-5 md:mb-0 w-full h-full rounded-lg overflow-hidden inner-container"
     ></div>
     </div>
   );
