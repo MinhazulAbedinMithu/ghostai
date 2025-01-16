@@ -44,6 +44,18 @@ html, body {
   margin: 0;
 }
 
+.c-te__chat{
+  display: none !important;
+}
+.Layout-sc-1xcs6mc-0{
+  display: none !important;
+}
+.c-te__layout--video-with-chat .c-te__chat {
+  display: none;
+}
+
+/* data-a-target="embed-chat-container" */
+
 .outer-container {
   position: relative;
   display: flex;

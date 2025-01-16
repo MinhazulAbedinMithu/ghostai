@@ -15,13 +15,13 @@ export default function Home() {
 
     </div>}
       <div className="md:flex items-end justify-end h-full w-full">
-    <div className="md:max-w-3xl md:mx-auto w-full">
+    <div className="md:max-w-3xl md:mx-auto w-full relative">
       {/* <div className="grid grid-cols-1 md:grid-cols-2 items-stretch gap-6 md:gap-10 px-4 md:px-10 py-6">
         <LeftContent />
         <RightContent />
       </div> */}
       <div className="flex items-center flex-col justify-center gap-8">
-        {terminalMode === "terminal" ? <LeftContent/>: terminalMode === "stream" ? <div className="max-w-[500px] w-full h-[350px] md:absolute top-[100px] left-[0px] flex items-center justify-center flex-col gap-4">
+        {terminalMode === "terminal" ? <LeftContent/>: terminalMode === "stream" ? <div className="max-w-[400px] w-full h-[350px] md:absolute top-[50px]  xl:-left-[33%] 2xl:-left-[55%] flex items-center justify-center flex-col gap-4">
           <RightContent/>
           <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button>
         </div> : null}
