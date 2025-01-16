@@ -35,7 +35,7 @@ export default function RootLayout({
             muted
           >
             {/* <source src="/background-1.mp4" type="video/mp4" /> */}
-            <source src="/background.mp4" type="video/mp4" />
+            <source src="/bg.mp4" type="video/mp4" />
           </video>
         </div>
         {children}
