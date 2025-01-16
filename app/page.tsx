@@ -21,7 +21,7 @@ export default function Home() {
         <RightContent />
       </div> */}
       <div className="flex items-center flex-col justify-center gap-8">
-        {terminalMode === "terminal" ? <LeftContent/>: terminalMode === "stream" ? <div className="max-w-[550px] w-full h-[400px] md:absolute top-[50px]  xl:-left-[33%] 2xl:-left-[58%] flex items-center justify-center flex-col gap-4">
+        {terminalMode === "terminal" ? <LeftContent/>: terminalMode === "stream" ? <div className="max-w-[550px] w-full h-[400px] md:absolute top-[50px]  xl:-left-[38%] 2xl:-left-[58%] flex items-center justify-center flex-col gap-4">
           <RightContent/>
           <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button>
         </div> : null}
