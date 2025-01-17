@@ -28,7 +28,7 @@ const RightContent = () => {
           height: "100%",
           channel: "ghost___ai",
           parent: ["www.example.com"],
-          layout: "video",
+          layout: "video-with-chat"
         });
       }
     };
