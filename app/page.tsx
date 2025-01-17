@@ -21,11 +21,14 @@ export default function Home() {
         <RightContent />
       </div> */}
       <div className="flex items-center flex-col justify-center gap-8">
-        {terminalMode === "terminal" ? <LeftContent/>: terminalMode === "stream" ? <div className="stream-box lg:absolute flex items-center justify-center flex-col gap-4">
+        {terminalMode === "terminal" && <LeftContent/> }
+        {/* : terminalMode === "stream" ?  */}
+        <div className={`${terminalMode === "terminal"? "small-stream-box" : "stream-box"} xl:absolute flex items-center justify-center flex-col gap-4`}>
           <RightContent/>
           <div>Live Stream</div>
           {/* <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button> */}
-        </div> : null}
+        </div> 
+         {/* : null} */}
 
         {terminalMode==="terminal" && <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button>}
       </div>
