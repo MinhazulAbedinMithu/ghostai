@@ -1,5 +1,6 @@
 "use client";
-import React, { useEffect } from "react";
+import Image from "next/image";
+import React, { useEffect, useState } from "react";
 
 type TwitchEmbedOptions = {
   width: string;
@@ -14,6 +15,27 @@ type Twitch = {
 };
 
 const RightContent = () => {
+  const [layout, setLayout] = useState<"video" | "video-with-chat">("video");
+
+  const initializeTwitchEmbed = (layout: "video" | "video-with-chat") => {
+    const Twitch = (window as unknown as { Twitch: Twitch }).Twitch;
+
+    if (Twitch && Twitch.Embed) {
+      // Clear the existing embed
+      const embedContainer = document.getElementById("twitch-embed");
+      if (embedContainer) embedContainer.innerHTML = "";
+
+      // Create a new embed with the selected layout
+      new Twitch.Embed("twitch-embed", {
+        width: "100%",
+        height: "100%",
+        channel: "ghost___ai",
+        parent: ["www.example.com"],
+        layout,
+      });
+    }
+  };
+
   useEffect(() => {
     const script = document.createElement("script");
     script.src = "https://embed.twitch.tv/embed/v1.js";
@@ -21,16 +43,7 @@ const RightContent = () => {
     document.body.appendChild(script);
 
     script.onload = () => {
-      const Twitch = (window as unknown as { Twitch: Twitch }).Twitch;
-      if (Twitch && Twitch.Embed) {
-        new Twitch.Embed("twitch-embed", {
-          width: "100%",
-          height: "100%",
-          channel: "ghost___ai",
-          parent: ["www.example.com"],
-          layout: "video-with-chat"
-        });
-      }
+      initializeTwitchEmbed(layout); // Initialize with the default layout
     };
 
     return () => {
@@ -38,8 +51,19 @@ const RightContent = () => {
     };
   }, []);
 
+  useEffect(() => {
+    // Re-initialize the embed whenever layout changes
+    initializeTwitchEmbed(layout);
+  }, [layout]);
+
   return (
-    <div className="outer-container h-full  w-full">
+    <div className="outer-container h-full  w-full relative">
+      <div className="absolute z-[999] top-4 right-4">
+        <button onClick={() => layout==="video" ? setLayout("video-with-chat") : setLayout("video")}>
+          <Image src={"/chat.png"} alt="chat" width={40} height={40}/>
+        </button>
+      </div>
+
     <div
       id="twitch-embed"
       className="mb-5 md:mb-0 w-full h-full rounded-lg overflow-hidden inner-container"
