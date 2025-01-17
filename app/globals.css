@@ -105,13 +105,6 @@ html, body {
 
 /* max-w-[500px] 2xl:max-w-[600px] w-full h-[420px] md:absolute top-[-40px] 2xl:top-[50px]  xl:-left-[38%] 2xl:-left-[58%] */
 
-.small-stream-box{
-  max-width: 300px;
-  width: 100%;
-  height: 180px;
-  top: 0;
-  left: -15%;
-}
 .stream-box{
   max-width: 500px;
   width: 100%;
@@ -128,7 +121,6 @@ html, body {
     max-width: 450px;
     height: 290px;
   }
-  
 }
 
 
