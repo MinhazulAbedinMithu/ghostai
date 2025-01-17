@@ -31,7 +31,7 @@ const RightContent = () => {
         height: "100%",
         channel: "ghost___ai",
         parent: ["www.example.com"],
-        layout,
+        layout: "video",
       });
     }
   };
@@ -58,11 +58,11 @@ const RightContent = () => {
 
   return (
     <div className="outer-container h-full  w-full relative">
-      <div className="absolute z-[999] top-4 right-4">
+      {/* <div className="absolute z-[999] top-4 right-4">
         <button onClick={() => layout==="video" ? setLayout("video-with-chat") : setLayout("video")}>
           <Image src={"/chat.png"} alt="chat" width={40} height={40}/>
         </button>
-      </div>
+      </div> */}
 
     <div
       id="twitch-embed"
