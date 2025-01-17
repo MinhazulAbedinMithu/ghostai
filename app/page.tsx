@@ -27,7 +27,7 @@ export default function Home() {
           {/* <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button> */}
         </div> : null}
 
-        {terminalMode==="terminal" && <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode("terminal")}>Exit</button>}
+        {terminalMode==="terminal" && <button className="bg-black text-white px-3 py-1 burbanfont" onClick={() => setTerminalMode(null)}>Exit</button>}
       </div>
       {/**
        * <div className="grid grid-cols-1 md:grid-cols-3 items-stretch gap-6 md:gap-10 px-4 md:px-10 py-6">
