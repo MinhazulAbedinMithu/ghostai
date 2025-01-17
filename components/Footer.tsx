@@ -50,6 +50,7 @@ const Footer = () => {
         >
           <FaYoutube />
         </Link>
+        
       </div>
     </div>
   );
