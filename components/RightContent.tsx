@@ -7,6 +7,8 @@ type TwitchEmbedOptions = {
   channel: string;
   parent: string[];
   layout?: "video" | "chat" | "video-with-chat"; // Add layout with valid values
+  autoplay?: boolean;
+  muted?: boolean;
 };
 
 type Twitch = {
@@ -31,6 +33,8 @@ const RightContent = () => {
         channel: "ghost___ai",
         parent: ["www.example.com"],
         layout: "video",
+        autoplay: true, // Attempt autoplay
+        muted: false,
       });
     }
     setLayout(layout)
