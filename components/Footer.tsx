@@ -30,21 +30,21 @@ const Footer = () => {
           <FaTwitch />
         </Link>
         <Link
-          href=""
+          href="https://t.me/GHOSTAIONSOL"
           className="hover:text-white"
           target="_blank"
         >
           <FaTelegram />
         </Link>
         <Link
-          href=""
+          href="https://github.com/GHOSTAIONSOL"
           className="hover:text-white"
           target="_blank"
         >
           <FaGithub />
         </Link>
         <Link
-          href=""
+          href="https://www.youtube.com/@GHOSTAI_SOL"
           className="hover:text-white"
           target="_blank"
         >
