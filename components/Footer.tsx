@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { FaGithub, FaTelegram } from "react-icons/fa";
 import { FaTwitch } from "react-icons/fa6";
 import { RiTwitterXFill } from "react-icons/ri";
 import { SiGitbook } from "react-icons/si";
@@ -27,6 +28,20 @@ const Footer = () => {
           target="_blank"
         >
           <FaTwitch />
+        </Link>
+        <Link
+          href=""
+          className="hover:text-white"
+          target="_blank"
+        >
+          <FaTelegram />
+        </Link>
+        <Link
+          href=""
+          className="hover:text-white"
+          target="_blank"
+        >
+          <FaGithub />
         </Link>
       </div>
     </div>
